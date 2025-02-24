@@ -1,0 +1,97 @@
+
+:root{
+
+    --White: hsl(0, 0%, 100%);
+    --pink: hsl(275, 100%, 97%);
+    --purple: hsl(292, 16%, 49%);
+    --purpleLight: hsla(293, 61%, 50%, 0.911); ;
+    --Darkpurple: hsl(292, 42%, 14%);
+}
+
+body {
+    background-image:url(/JS/faq-accordion-main/assets/images/background-pattern-desktop.svg); ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 45% ;
+    background-color: var(--pink);
+    font-family: "Work Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom:100px ;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.Contenedor {
+    background-color: var(--White);
+    width:520px ;
+    height: auto;
+    padding: 50px ;
+    border-radius:20px ;
+}
+
+.oculto {
+    display: none;
+}
+
+.Contenedor h1{
+    margin: 0px;
+    font-size: 50px;
+    color:var(--Darkpurple) ;
+}
+.TexBtn h4{
+    color:var(--Darkpurple) ;
+    transition: color 0.3s ease;
+}
+
+.TexBtn {
+    color:var(--Darkpurple) ;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.TexBtn:hover h4 {
+    color:var(--purpleLight) ;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.Contenedor p{
+    color:var(--purple) ;
+    font-size: 16px;
+}
+
+.TexBtn {
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;   
+
+}
+.boton {
+    border: none; 
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 50% ;
+    display: flex;
+    gap: 10px; 
+    cursor: pointer; 
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid hsl(0, 0%, 90%); /* Gris muy claro */
+    margin: 2px 0; /* Ajusta el espacio alrededor de la línea horizontal */
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
