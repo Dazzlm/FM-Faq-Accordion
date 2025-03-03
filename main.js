@@ -23,6 +23,10 @@ sections.forEach((section) => {
     for(let i = 1; i < sections.length+1 ; i++){
       let resp = document.getElementById("Resp"+i.toString());
       let boton = document.getElementById("Btn"+i.toString());
+      if(actual =! i.toString()){
+        resp.style.display = "none"
+        boton.src = "/JS/faq-accordion-main/assets/images/icon-minus.svg";
+      }
       
     }
   });
